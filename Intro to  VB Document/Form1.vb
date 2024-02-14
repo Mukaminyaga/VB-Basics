@@ -1,15 +1,9 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
-
+﻿Imports System.Windows.Forms
 Public Class Form1
+
     Private Sub Buttonload_Click(sender As Object, e As EventArgs) Handles buttonLoad.Click
-        Dim objectDemoForm As New Form()
-
-        ' Configure the Object Demonstrations form
-        objectDemoForm.Text = "Object Demonstrations"
-        ' Add other controls and configure the form as needed
-
-        ' Show the Object Demonstrations form
-        objectDemoForm.ShowDialog()
+        Dim form2Instance As New Form2()
+        form2Instance.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles buttonExit.Click
@@ -29,4 +23,5 @@ Public Class Form1
         ' Set tooltip for Exit button
         ToolTip1.SetToolTip(buttonExit, "Click to exit")
     End Sub
+
 End Class
